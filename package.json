@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd src && node --no-strip-types --disable-warning=ExperimentalWarning --disable-warning=DEP0180 --loader ts-node/esm index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,9 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "jest": "^30.5.2",
     "prettier": "^3.9.10",
+    "ts-jest": "^29.4.15",
     "ts-node": "^10.9.2",
     "typescript": "5.4"
   }
