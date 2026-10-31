@@ -1,5 +1,9 @@
-import { expect, test } from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
-test("does the thing", () => {
-  expect(true).toEqual(true);
+describe("Entity", () => {
+  test("does the thing", () => {
+    expect(() => {
+      return true;
+    }).toEqual(true);
+  });
 });
